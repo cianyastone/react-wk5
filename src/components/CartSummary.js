@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Badge } from "antd";
 import { CartIcon } from "./Icons";
-import CartModal from "./CartModal";
+// import CartModal from "./CartModal";
 import { PAGE_TITLE_SET } from "../utils/constants";
 import { StoreContext } from "../store";
 
@@ -10,8 +10,8 @@ export default function CartSummary() {
 
   const { state: { cartItems } } = useContext(StoreContext);
   const { state, dispatch} = useContext(StoreContext);
-  const [isModalVisible, setIsModalVisible] = useState(false);
-  const toggleModal = () => setIsModalVisible(!isModalVisible);
+  // const [isModalVisible, setIsModalVisible] = useState(false);
+  // const toggleModal = () => setIsModalVisible(!isModalVisible);
 
   const onClick = () => {
     dispatch({

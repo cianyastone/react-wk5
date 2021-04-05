@@ -1,4 +1,4 @@
-import { Modal, Button, Select } from "antd";
+import { Button, Select } from "antd";
 import { useContext } from "react";
 import { StoreContext } from "../store"
 import { CartIcon } from "./Icons";
