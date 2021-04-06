@@ -34,7 +34,7 @@ export default function CartModal({ isModalVisible, toggleModal }) {
    }
 
    return (
-      <>
+      <div>
          {cartItems.length === 0 ? (
             <div>Cart is empty</div>
          ) : (
@@ -83,6 +83,6 @@ export default function CartModal({ isModalVisible, toggleModal }) {
             <CartIcon size={20} />
             <span style={{ marginLeft: 12 }}>Start Checkout</span>
          </Button>
-      </>
+      </div>
    );
 }
